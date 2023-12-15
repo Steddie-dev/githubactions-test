@@ -12,6 +12,10 @@ jobs:
     steps:
       - name: Development Code
         uses: actions/checkout@v2
+      - name: Download Heroku CLI
+        uses: akhileshns/setup-heroku@v4
+        with:
+          heroku_api_key : ${{ secrets.HEROKU_API_KEY }}
       - name: Use Node.js 17.9.1
         uses: actions/setup-node@v1
         with:
