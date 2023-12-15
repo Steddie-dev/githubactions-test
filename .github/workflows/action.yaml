@@ -3,11 +3,11 @@ name: Development workflow
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: heroku-runner
 
     steps:
       - name: Development Code
@@ -22,5 +22,5 @@ jobs:
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-          heroku_app_name: 'github-actions-heroku-develop'
-          heroku_email: 'zafarsaleem3@gmail.com'
+          heroku_app_name: 'githubactions-test'
+          heroku_email: 'aoyagbesan@stenograph.com'
