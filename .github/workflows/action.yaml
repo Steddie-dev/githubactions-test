@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: heroku-runner
+    runs-on: self-hosted
 
     steps:
       - name: Development Code
