@@ -4,7 +4,7 @@ const app = express();
 app.get('/', (req, res) => {
   res
     .status(200)
-    .send('Good afternoon folks')
+    .send('Back to the drawing board')
     .end();
 });
  
